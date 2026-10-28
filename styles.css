@@ -1,0 +1,144 @@
+/* Configuración general del fondo y centrado */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor Principal con Estilo Dashboard / Bento */
+.dashboard-card {
+    background: #ffffff;
+    width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+/* Cabecera */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 15px;
+}
+
+.info-title h2 {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.info-title p {
+    margin: 0;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Etiqueta de Estado Circular */
+.status-pill {
+    background-color: #ecfdf5;
+    color: #059669;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 50px;
+    border: 1px solid #a7f3d0;
+}
+
+/* Cuerpo en dos secciones usando Flexbox */
+.card-body {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Caja de estadística compacta a la izquierda */
+.stat-box-modern {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 15px 20px;
+    text-align: center;
+    min-width: 110px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 28px;
+    font-weight: 800;
+    color: #4f46e5;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #64748b;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Sección de progreso a la derecha */
+.progress-section {
+    flex-grow: 1;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.percentage {
+    color: #4f46e5;
+}
+
+.progress-track {
+    background-color: #f1f5f9;
+    border-radius: 6px;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, #6366f1, #4f46e5);
+    width: 85%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+/* Botón inferior con estilo moderno y degradado */
+.card-footer {
+    width: 100%;
+}
+
+.action-btn {
+    background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.4);
+}
